@@ -1,0 +1,64 @@
+!!!
+%html
+  %head
+    %title CWDG Demo
+  %body
+    %h1 Hypertext Markup Language
+    %p This is a simple html page.
+    %pre
+      %code&="<p>This is a simple html page.</p>"
+
+    %hr
+
+    %p
+      How do I
+      %br/
+      %span(style='color: red;') colorfully break
+      %br/
+      lines?
+
+    %pre
+      %code&="<p>How do I<br /><span style=\"color: red;\">colorfully break</span><br />lines?</p>"
+
+    %hr
+
+    %p
+      :markdown
+        How do I get to [another website](https://duckduckgo.com/)?
+    %pre
+      %code&='<p>How do I get to <a href="https://duckduckgo.com/">another website</a>?</p>'
+
+    %hr
+    %p
+      :markdown
+
+        But how do I add cat pictures?!?!?!?
+
+        ![Toast Head](http://25.media.tumblr.com/tumblr_m8c7ii3PDu1rwf6mzo1_500.gif)
+
+    %pre
+      %code&='<img src="http://25.media.tumblr.com/tumblr_m8c7ii3PDu1rwf6mzo1_500.gif" alt="Toast Head" />'
+
+    %hr
+    %p
+      Ok, but how do I make a form?
+
+    %h2 Add an Item to your TODO list!
+    %form(action='/todo' method='POST')
+      %label(for='task') Add a task:
+      %input(type='text' name='task') Due:
+      %label(for='due')
+      %input(type='date' name='due')
+      %input(type='submit' value='Add')
+
+    %pre
+      %code
+        :escaped
+
+          <form action="/todo" method="POST">
+            <label for="task">Add a task:</label>
+            <input name="task" type="text">Due:
+            <label for="due"></label>
+            <input name="due" type="date">
+            <input type="submit" value="Add">
+          </form>

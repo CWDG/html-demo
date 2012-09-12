@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>CWDG Demo</title>
+  </head>
+  <body>
+    <h1>Hypertext Markup Language</h1>
+    <p>This is a simple html page.</p>
+    <pre><code>&lt;p&gt;This is a simple html page.&lt;/p&gt;</code></pre>
+    <hr />
+    <p>
+      How do I
+      <br />
+      <span style='color: red;'>colorfully break</span>
+      <br />
+      lines?
+    </p>
+    <pre><code>&lt;p&gt;How do I&lt;br /&gt;&lt;span style=&quot;color: red;&quot;&gt;colorfully break&lt;/span&gt;&lt;br /&gt;lines?&lt;/p&gt;</code></pre>
+    <hr />
+    <p>
+      <p>How do I get to <a href="https://duckduckgo.com/">another website</a>?</p>
+    </p>
+    <pre><code>&lt;p&gt;How do I get to &lt;a href=&quot;https://duckduckgo.com/&quot;&gt;another website&lt;/a&gt;?&lt;/p&gt;</code></pre>
+    <hr />
+    <p>
+      <p>But how do I add cat pictures?!?!?!?</p>
+      
+      <p><img src="http://25.media.tumblr.com/tumblr_m8c7ii3PDu1rwf6mzo1_500.gif" alt="Toast Head" /></p>
+    </p>
+    <pre><code>&lt;img src=&quot;http://25.media.tumblr.com/tumblr_m8c7ii3PDu1rwf6mzo1_500.gif&quot; alt=&quot;Toast Head&quot; /&gt;</code></pre>
+    <hr />
+    <p>
+      Ok, but how do I make a form?
+    </p>
+    <h2>Add an Item to your TODO list!</h2>
+    <form action='/todo' method='POST'>
+      <label for='task'>Add a task:</label>
+      <input name='task' type='text'>Due:</input>
+      <label for='due'></label>
+      <input name='due' type='date' />
+      <input type='submit' value='Add' />
+    </form>
+    <pre><code>&lt;form action=&quot;/todo&quot; method=&quot;POST&quot;&gt;
+      &lt;label for=&quot;task&quot;&gt;Add a task:&lt;/label&gt;
+      &lt;input name=&quot;task&quot; type=&quot;text&quot;&gt;Due:
+      &lt;label for=&quot;due&quot;&gt;&lt;/label&gt;
+      &lt;input name=&quot;due&quot; type=&quot;date&quot;&gt;
+      &lt;input type=&quot;submit&quot; value=&quot;Add&quot;&gt;
+    &lt;/form&gt;</code></pre>
+  </body>
+</html>
